@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Incorrect usage of innerHTML with an attempt to insert a complete HTML element
+    document.getElementById("myDiv").innerHTML = "<div>This text replaces the previous text</div><p>This is a new paragraph</p>";
+  </script>
+</body>
+</html>
