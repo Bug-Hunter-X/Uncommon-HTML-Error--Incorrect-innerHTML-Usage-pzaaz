@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Corrected approach using DOM manipulation
+    const myDiv = document.getElementById("myDiv");
+    const newDiv = document.createElement("div");
+    newDiv.textContent = "This text replaces the previous text";
+    myDiv.innerHTML = '';
+    myDiv.appendChild(newDiv);
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "This is a new paragraph";
+    myDiv.appendChild(newParagraph);
+  </script>
+</body>
+</html>
